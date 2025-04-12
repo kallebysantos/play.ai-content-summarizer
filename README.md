@@ -1,6 +1,6 @@
 # 🧠 Chrome Article Summarizer
 
-A minimal Chrome Extension built with React, TypeScript, and Vite that uses OpenAI's GPT API to summarize article content on the current page. This is the MVP version — simple, fast, and focused.
+A minimal Chrome Extension built with React, TypeScript, and Vite that uses OpenAI's GPT API to summarize article content on the current page. This is the simple version — simple, fast, and focused.
 
 ![image](https://github.com/user-attachments/assets/25dc25aa-b066-4589-8f31-98e1222f28f4)
 
@@ -69,5 +69,5 @@ npm run build
 
 ## 🤝 Contributing
 
-This MVP is public for educational purposes. <br />
+This project is public for educational purposes. <br />
 Feel free to fork and play around — PRs not accepted at this time.
