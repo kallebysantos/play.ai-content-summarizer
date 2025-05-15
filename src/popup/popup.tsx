@@ -43,15 +43,85 @@ const Popup: React.FC = () => {
   }
 
   return (
-    <div style={{ width: '300px', padding: '1rem', fontFamily: 'Arial' }}>
-      <h2>🧠 AI Summarizer</h2>
-      <button onClick={handleSummarize} disabled={loading}>
-        {loading ? 'Summarizing...' : 'Summarize This Page'}
-      </button>
-      <p style={{ marginTop: '1rem', fontSize: '14px' }}>
-        {summary || 'No summary yet.'}
-      </p>
-    </div>
+<div
+  style={{
+    width: '320px',
+    padding: '1.5rem',
+    fontFamily: '"Poppins", sans-serif',
+    background: '#f9f9f9',
+    borderRadius: '12px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    border: '1px solid #e0e0e0',
+  }}
+>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <h2 style={{ marginBottom: '1rem', fontSize: '1.5rem', color: '#333' }}>
+    🧠 <span style={{ color: '#5c67f2' }}>AI Summarizer</span>
+  </h2>
+
+  <button
+    onClick={handleSummarize}
+    disabled={loading}
+    style={{
+      backgroundColor: loading ? '#ccc' : '#5c67f2',
+      color: '#fff',
+      border: 'none',
+      padding: '0.75rem 1.25rem',
+      borderRadius: '8px',
+      cursor: loading ? 'not-allowed' : 'pointer',
+      fontSize: '1rem',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '8px',
+      minWidth: '180px',
+      fontWeight: 600,
+    }}
+  >
+    {loading ? (
+      <>
+        <span
+          style={{
+            width: '16px',
+            height: '16px',
+            border: '3px solid #fff',
+            borderTop: '3px solid transparent',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+          }}
+        ></span>
+        Summarizing...
+      </>
+    ) : (
+      'Summarize This Page'
+    )}
+  </button>
+
+  <p
+    style={{
+      marginTop: '1.25rem',
+      fontSize: '15px',
+      color: '#555',
+      lineHeight: '1.6',
+      minHeight: '3em',
+    }}
+  >
+    {summary || 'No summary yet.'}
+  </p>
+
+  <style>
+    {`
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `}
+  </style>
+</div>
   )
 }
 
