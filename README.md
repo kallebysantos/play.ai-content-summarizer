@@ -73,4 +73,4 @@ npm run build
 ## 🤝 Contributing
 
 This project is public for educational purposes. <br />
-Feel free to fork and play around — PRs not accepted at this time.
+Feel free to fork and play around — PRs are accepted.
