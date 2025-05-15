@@ -2,7 +2,10 @@
 
 A minimal Chrome Extension built with React, TypeScript, and Vite that uses OpenAI's GPT API to summarize article content on the current page. This is the simple version — simple, fast, and focused.
 
-![image](https://github.com/user-attachments/assets/25dc25aa-b066-4589-8f31-98e1222f28f4)
+![image](https://github.com/user-attachments/assets/6e5fce02-3d01-40a7-a873-e528bd76c339)
+![image](https://github.com/user-attachments/assets/2addcc71-e0f2-496e-82d5-dd1de153cb8b)
+![image](https://github.com/user-attachments/assets/fed50a31-4f34-4a5a-99fe-472559b7dd60)
+
 
 ---
 
